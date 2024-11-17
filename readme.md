@@ -20,6 +20,6 @@ El algoritmo K-Means, al ser un algoritmo basado en distancias, para evitar sesg
 
 ## a) Procesamiento de datos
 
-El archivo .js que se encargará de procesar los datos se encuentra dentro del directorio del backend:
+El archivo .js que se encargará de procesar los datos se encuentra dentro del directorio del backend, en la carpeta "procesamiento":
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I1.JPG)
