@@ -95,3 +95,21 @@ Ahora, ya que implementé el backend, procederé con el frontend.
 Para el frontend implementé React, y creé 4 archivos .js. 
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I10.JPG)
+
+* **Alerta.js:** Componente que se encargará de mostrar las alertas.
+* **MostrarEstadistica.js:** Componente que se encargará de mostrar las estadísticas.
+* **SolicitarDatos.js:**: Componente que se encargará de solicitar los datos al backend.
+* **index.js**: Aquí se renderizarán y mostrarán los componentes.
+
+-----
+## a) Componente 'SolicitarDatos.js':
+En este componente, hago lo siguiente de manera resumida:
+- Hooks useEffect y useState: Usé 'useEffect' para realizar la solicitud POST al endpoint de la API cuando se renderiza por primera vez el componente. Usé 'useState' para almacenar la data que obtuve como respuesta del servidor express y para mostrar la data cuando se haya obtenido una respuesta por parte del servidor.
+- Importé los componentes 'MostrarEstadistica.js' y 'Alerta.js' y los anidé (componentes anidados), con el objetivo de pasar las respuestas del servidor express para a partir de ello pasarlas como 'props' a dichos componentes y puedan mostrar las estadísticas y alertas correspondientes.
+- Utilicé el operador ternario en el JSX del componente 'SolicitarDatos.js' para que solamente se muestren los datos cuando se haya obtenido una respuesta por parte del servidor.
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I11.JPG)
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I12.JPG)
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I13.JPG)
