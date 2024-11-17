@@ -90,3 +90,8 @@ Para implementar el servidor, usé los siguientes módulos:
 =======
 
 # FRONTEND:
+Ahora, ya que implementé el backend, procederé con el frontend.
+
+Para el frontend implementé React, y creé 4 archivos .js. 
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I10.JPG)
