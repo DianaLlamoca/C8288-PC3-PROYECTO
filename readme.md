@@ -136,7 +136,7 @@ Finalmente, se renderizan los componentes.
 
 =======
 
-# PROBANDO LA CONEXIÓN ENTRE EL BACKEND Y FRONTEND.
+# CONEXIÓN ENTRE EL BACKEND Y FRONTEND.
 Para ello, primeramente inicio el servidor express:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I17.JPG)
