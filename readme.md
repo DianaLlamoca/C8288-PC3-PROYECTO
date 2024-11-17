@@ -42,6 +42,16 @@ De forma resumida, en el procesamiento, lo que hice fue lo siguiente:
 
 Ya que la data fue procesada, ahora debo implementar el algoritmo. Para ello, como ya lo mencioné anteriormente, usé el módulo "tf-kmeans".
 
-El algoritmo K-Means implementado lo ubiqué dentro del directorio del backend, en la carpeta "algoritmo":
+El algoritmo K-Means lo ubiqué dentro del directorio del backend, en la carpeta "algoritmo":
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I5.JPG)
+
+Ahora, la forma en como implementé el algoritmo fue la siguiente:
+- Importé el módulo y creé una función "K_Means", de tal forma que pueda posteriormente exportarla y usarla en la solicitud a la API cuando se realiza una solicitud mediante el método POST. 
+- Dicha función la cree para que recibe 3 parámetros: la data procesada, el número de clústers y las iteraciones del algoritmo.
+- Posteriormente, mediante KMeans.default estoy obteniendo el modelo K-Means y el modelo se ajustará en base a los hiperparámetros que se le pase mediante la solicitud a la API con el método POST en el body de la solicitud.
+- Realizo, luego, el entrenamiento.
+- Finalmente, devuelvo las predicciones de los clústers a los que pertenece cada dato, así como las coordenadas de los centroides.
+- Exporto la función para usarla en el servidor.
+
+  ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I6.JPG)
