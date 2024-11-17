@@ -24,6 +24,6 @@ El archivo .js que se encargará de procesar los datos se encuentra dentro del d
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I1.JPG)
 
-En primer lugar, estoy leyendo el archivo CSV con el módulo "fs" mediante "createReadStream" y recibirá como parámetro la ruta para ubicar al archivo CSV:
+En primer lugar, estoy leyendo el archivo CSV con el módulo "fs" mediante "createReadStream", que recibirá como parámetro la ruta para ubicar al archivo CSV:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I2.JPG)
