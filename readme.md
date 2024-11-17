@@ -37,3 +37,11 @@ De forma resumida, en el procesamiento, lo que hice fue lo siguiente:
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I3.JPG)
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I4.JPG)
+
+## b) Algoritmo K-Means
+
+Ya que la data fue procesada, ahora debo implementar el algoritmo. Para ello, como ya lo mencioné anteriormente, usé el módulo "tf-kmeans".
+
+El algoritmo K-Means implementado lo ubiqué dentro del directorio del backend, en la carpeta "algoritmo":
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I5.JPG)
