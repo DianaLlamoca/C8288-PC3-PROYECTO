@@ -113,3 +113,11 @@ En este componente, hago lo siguiente de manera resumida:
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I12.JPG)
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I13.JPG)
+
+## b) Componente 'Alerta.js':
+En este componente hice lo siguiente:
+- Desde el componente 'padre' (SolicitarDatos.js) le pasé al componente anidado 'Alerta.js' los clústers predichos pertenecientes por cada uno de los puntos de datos.
+- Como la prop que pasé fue un arreglo, lo que quise mostrar fue mostrar cuántos puntos de datos fueron asignados a los clústers. Así que para ello hice un pequeño procesamiento para mapearlos a un objeto, y a partir de allí sumar cuántos puntos de datos fueron asignados a cada clúster.
+- Finalmente, en una lista de html muestro los clústers con la cantidad de datos asignados a ellos y exporto el componente.
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I14.JPG)
