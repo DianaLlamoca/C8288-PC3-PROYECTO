@@ -137,3 +137,23 @@ Finalmente, se renderizan los componentes.
 =======
 
 # PROBANDO LA CONEXIÓN ENTRE EL BACKEND Y FRONTEND.
+Para ello, primeramente inicio el servidor express:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I17.JPG)
+
+Luego, inicializo el frontend:
+Para ello, abro otra terminal al mismo tiempo para que el servidor pueda recibir la solicitud:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I18.JPG)
+
+Como usé 'useEffect' y coloqué "[]" en el hook, la solicitud POST a la API se realizará cuando se renderizar por primera vez el componente. Por lo que el servidor recibe la solicitud y empieza a procesarla:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I19.JPG)
+
+Es así como se muestra la siguiente interfaz hasta que se reciban los datos:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I20.JPG)
+
+Una vez que en el frontend se reciben los datos, se muestran los resultados enviados desde el servidor:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I21.JPG)
