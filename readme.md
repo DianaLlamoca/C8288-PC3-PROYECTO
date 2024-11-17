@@ -7,3 +7,10 @@ Implementa una API REST básica para manejar los datos. Realiza pruebas unitaria
 =========
 
 # 1) Analizando el conjunto de datos de tráfico de red preexistente para detectar posibles intrusiones utilizando el algoritmo K-Means con Tensorflow.js 
+**Nota**: El conjunto de datos preexistente que utilicé fue UNSW-NB15 DataSet.
+
+Para analizar el conjunto de datos e implementar el algoritmo K-Means, utilicé los siguientes módulos:
+**- @tensorflow/tfjs:** Este módulo me ayudó para realizar operaciones matemáticas que las usé para el procesamiento de los datos, como la estandarización.
+El algoritmo K-Means, al ser un modelo basado en distancias, para evitar sesgos y que el cálculo de los clústers al ejecutar el modelo sea más eficiente, realicé la estandarización.
+
+**- tf-kmeans**: Este módulo me sirvió para aplicar el algoritmo K-Means a los datos ya procesados.
