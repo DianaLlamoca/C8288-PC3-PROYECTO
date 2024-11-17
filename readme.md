@@ -157,3 +157,23 @@ Es así como se muestra la siguiente interfaz en el frontend hasta que se reciba
 Una vez que en el frontend se reciben los datos, se muestran los resultados enviados desde el servidor:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I21.JPG)
+
+=====
+
+# PRUEBAS CON JEST
+Antes de contenerizar el proyecto, tanto para la parte del backend como parte la parte del frontend, es necesario realizar pruebas.
+
+En este caso, realicé pruebas con Jest para probar el algoritmo de detección.
+
+Así, en el directorio del backend, creé una carpeta llamada "pruebas":
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I22.JPG)
+
+En el archivo 'prueba.test.js' realicé las pruebas. Lo que hice fue lo siguiente:
+- Creé 2 tensores de prueba para utilizar el algoritmo K-Means. Así que para ello tuve que importar la función encargada de implementar el K-Means.
+- Luego, cree dos casos de pruebas que testeen la funcionalidad del algoritmo. Probé el modelo con diferentes parámetros y con diferentes tamaños de tensores para verificar si devolvía el valor esperado, así como si retornaba una respuesta:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I24.JPG)
+
+## Finalmente, ejecuto las pruebas:
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I25.JPG)
