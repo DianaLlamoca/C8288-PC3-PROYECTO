@@ -13,7 +13,7 @@ const Aplicacion=()=>{
     //Almaceno la respuesta
     const [respuesta,setRespuesta]=useState([]);
 
-    //Estableceré un valor booleano para indicar que los datos ya se cargaron. Al inicio será "false"
+    //Estableceré un valor booleano para indicar que los datos ya se cargaron. Al inicio será "true"
     const [cargando,setCargando]=useState(true);
 
     //Uso useEffect para que al iniciar la app, se realice la petición
