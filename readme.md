@@ -150,7 +150,7 @@ Como usé 'useEffect' y coloqué "[]" en el hook, la solicitud POST a la API se 
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I19.JPG)
 
-Es así como se muestra la siguiente interfaz hasta que se reciban los datos:
+Es así como se muestra la siguiente interfaz en el frontend hasta que se reciban los datos:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I20.JPG)
 
