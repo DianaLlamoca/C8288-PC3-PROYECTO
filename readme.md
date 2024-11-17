@@ -28,11 +28,11 @@ En primer lugar, estoy leyendo el archivo CSV con el módulo "fs" mediante "crea
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I2.JPG)
 
-Una vez que haya leído y almacenado los datos CSV, realicéel procesamiento de datos.
+Una vez que haya leído y almacenado los datos CSV, realicé el procesamiento de datos.
 De forma resumida, en el procesamiento, lo que hice fue lo siguiente:
 - Convertir a arrays de JS la data; y posteriormente a tensores con el módulo "tensorflow/tfjs"
 - En el dataset habían 3 columnas categóricas. Por lo que, en el procesamiento, separé dichas columnas (ya se les había aplicado el Label Encoder) para solamente aplicar el StandardScaling a las variables numéricas. Calculé la media y desviación estandar mediante el módulo "tensorflow/tfjs" y realicé el procesamiento.
-- Finalmente, junté las variables numéricas ya estandarizadas, con las variables categóricas.
+- Finalmente, junté las variables numéricas ya estandarizadas, con las variables categóricas y exporté ambas funciones: la que se encargará de leer el archivo CSV; y la segunda función que se encargará de realizar el procesamiento de los datos.
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I3.JPG)
 
