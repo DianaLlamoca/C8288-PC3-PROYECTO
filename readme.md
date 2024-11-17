@@ -102,7 +102,7 @@ Para el frontend implementé React, y creé 4 archivos .js.
 * **index.js**: Aquí se renderizarán y mostrarán los componentes.
 
 -----
-## a) Componente 'SolicitarDatos.js':
+## a) Componente 'Aplicacion' (solicitará los datos al servidor):
 En este componente, hago lo siguiente de manera resumida:
 - Hooks useEffect y useState: Usé 'useEffect' para realizar la solicitud POST al endpoint de la API cuando se renderiza por primera vez el componente. Usé 'useState' para almacenar la data que obtuve como respuesta del servidor express y para mostrar la data cuando se haya obtenido una respuesta por parte del servidor.
 - Importé los componentes 'MostrarEstadistica.js' y 'Alerta.js' y los anidé (componentes anidados), con el objetivo de pasar las respuestas del servidor express para a partir de ello pasarlas como 'props' a dichos componentes y puedan mostrar las estadísticas y alertas correspondientes.
@@ -114,10 +114,26 @@ En este componente, hago lo siguiente de manera resumida:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I13.JPG)
 
-## b) Componente 'Alerta.js':
-En este componente hice lo siguiente:
+## b) Componente 'Alertas':
+En este componente se mostrarán las alertas y para ello hice lo siguiente:
 - Desde el componente 'padre' (SolicitarDatos.js) le pasé al componente anidado 'Alerta.js' los clústers predichos pertenecientes por cada uno de los puntos de datos.
-- Como la prop que pasé fue un arreglo, lo que quise mostrar fue mostrar cuántos puntos de datos fueron asignados a los clústers. Así que para ello hice un pequeño procesamiento para mapearlos a un objeto, y a partir de allí sumar cuántos puntos de datos fueron asignados a cada clúster.
+- Como la prop que pasé fue un arreglo, lo que quise mostrar fue cuántos puntos de datos fueron asignados a cada clústers. Así que para ello hice un pequeño procesamiento para mapearlos a un objeto, y a partir de allí sumar cuántos puntos de datos fueron asignados a cada clúster.
 - Finalmente, en una lista de html muestro los clústers con la cantidad de datos asignados a ellos y exporto el componente.
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I14.JPG)
+
+## c) Componente 'Estadistica':
+Este componente se encargará de mostrar una estadística simple, que consiste en, por cada punto de dato, mostrar a qué clúster fue asignado. Para ello, hice lo siguiente:
+- Este, al ser también un componente anidado, le pasé una prop, dicha prop fueron los clústeres predichos, y, así, para cada punto de dato se mostrará el clúster al que fue asignado en una lista de html.
+- Finalmente, exporto el componente.
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I15.JPG)
+
+## d) Renderizando los componentes en index.js:
+Finalmente, se renderizan los componentes.
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I16.JPG)
+
+=======
+
+# PROBANDO LA CONEXIÓN ENTRE EL BACKEND Y FRONTEND.
