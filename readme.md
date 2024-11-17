@@ -106,7 +106,7 @@ Para el frontend implementé React, y creé 4 archivos .js.
 En este componente, hago lo siguiente de manera resumida:
 - Hooks useEffect y useState: Usé 'useEffect' para realizar la solicitud POST al endpoint de la API cuando se renderiza por primera vez el componente. Usé 'useState' para almacenar la data que obtuve como respuesta del servidor express y para mostrar la data cuando se haya obtenido una respuesta por parte del servidor.
 - Importé los componentes 'MostrarEstadistica.js' y 'Alerta.js' y los anidé (componentes anidados), con el objetivo de pasar las respuestas del servidor express para a partir de ello pasarlas como 'props' a dichos componentes y puedan mostrar las estadísticas y alertas correspondientes.
-- Utilicé el operador ternario en el JSX del componente 'SolicitarDatos.js' para que solamente se muestren los datos cuando se haya obtenido una respuesta por parte del servidor.
+- Utilicé el operador ternario en el JSX del componente 'SolicitarDatos.js' para que solamente se muestren los datos cuando se haya obtenido una respuesta por parte del servidor y finalmente exporto el componente.
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I11.JPG)
 
