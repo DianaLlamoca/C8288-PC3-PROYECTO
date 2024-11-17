@@ -54,4 +54,35 @@ Ahora, la forma en como implementé el algoritmo fue la siguiente:
 - Finalmente, devuelvo las predicciones de los clústers a los que pertenece cada dato, así como las coordenadas de los centroides.
 - Exporto la función para usarla en el servidor.
 
-  ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I6.JPG)
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I6.JPG)
+
+## c) El servidor
+
+Ya que las funciones para leer los datos del archivo CSV, el procesamiento de datos, así como la implementación de K-Means están listas para usar, puesto que ya las exporté, crearé el servidor en express para recibir los datos enviados mediante la solicitud POST.
+
+Para implementar el servidor, usé los siguientes módulos:
+- **express:** Para crear los endpoints de la API
+- **path:** Para leer el archivo csv que se encuentra en el directorio del backend.
+- **cors:** Este middleware es necesario para permitir el acceso a recursos alojados en diferentes dominios. Lo usé para conectar el backend (el servidor de express) con el frontend (en react), y poder así evitar el error de "No 'Access-Control-Allow-Origin' header is present on the requested resource."
+
+-----
+
+- Exporté, en el servidor, las funciones que se encargarán de leer los datos del archivo CSV, el procesamiento de datos y la implementación de K-Means en el servidor. También usé los middlewares necesarios: "cors" y "express.json()" para permitir el intercambio de datos entre el servidor y el cliente. 
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I7.JPG)
+
+- Cree un endpoint para las solicitudes POST:
+
+  ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I8.JPG)
+
+  En dicho endpoint, realizo lo siguiente:
+  - Obtengo los datos pasados en el body de la solitud al realizar el método POST. Dichos datos serán el número de clúster y las iteraciones (como lo mencioné anteriormente).
+  - Obtengo la ruta del archivo CSV que se encuentra en el backend y mando a procesar el archivo CSV para posteriormente realizar el procesamiento de los datos mediante la función "ProcesarData".
+  - Ya que la data fue procesada, uso la función exportada que se encargará de implementar el algoritmo K-Means a la data ya procesada.
+  - Envío, finalmente, la respuesta en formato JSON: las predicciones de a qué clúster pertenece cada punto de dato y las coordenadas de los clústers.
+  - Uso app.listen para iniciar el servidor.
+ 
+  ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I8.JPG)
+  
+  ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I9.JPG)
+
