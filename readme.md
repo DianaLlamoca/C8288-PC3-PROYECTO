@@ -146,7 +146,7 @@ Para ello, abro otra terminal al mismo tiempo para que el servidor pueda recibir
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I18.JPG)
 
-Como usé 'useEffect' y coloqué "[]" en el hook, la solicitud POST a la API se realizará cuando se renderizar por primera vez el componente. Por lo que el servidor recibe la solicitud y empieza a procesarla:
+Como usé 'useEffect' y coloqué "[]" en el hook, la solicitud POST a la API se realizará cuando se renderiza por primera vez el componente. Por lo que el servidor recibe la solicitud y empieza a procesarla:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I19.JPG)
 
