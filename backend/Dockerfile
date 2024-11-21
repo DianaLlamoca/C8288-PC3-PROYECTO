@@ -7,7 +7,7 @@ WORKDIR /app
 //Copio los archivos que inician con package y terminan en json (incluye en package.json como el package.lok)
 COPY package*.json ./
 
-//Instalo npm para ejecutar y correr el servidor
+//Instalo las dependencias que se encuentran en el package.json con "npm install"
 RUN npm install
 
 //Copio todos los archivos de la carpeta al directorio actual del contenedor
