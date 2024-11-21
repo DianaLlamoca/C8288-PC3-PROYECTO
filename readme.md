@@ -188,3 +188,8 @@ En el archivo 'prueba.test.js' realicé las pruebas. Lo que hice fue lo siguient
 ## Frontend:
 
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/frontend_dockerfile.JPG)
+
+=======
+
+### Dataset (carpeta backend):
+https://www.mediafire.com/file/oteo8qax1i39uo3/train_set.csv/file
