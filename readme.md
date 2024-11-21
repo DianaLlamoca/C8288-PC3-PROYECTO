@@ -177,3 +177,14 @@ En el archivo 'prueba.test.js' realicé las pruebas. Lo que hice fue lo siguient
 
 ## Finalmente, ejecuto las pruebas:
 ![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/I25.JPG)
+
+======
+
+# Dockerfile para el Backend y Frontend:
+## Backend:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/backend_dockerfile.JPG)
+
+## Frontend:
+
+![](https://github.com/DianaLlamoca/C8288-PC3-PROYECTO/blob/main/Imagenes/frontend_dockerfile.JPG)
