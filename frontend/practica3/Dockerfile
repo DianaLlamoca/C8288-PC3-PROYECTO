@@ -11,7 +11,7 @@ COPY package*.json ./
 //Instalo las dependencias definidas en el package.json con npm install
 RUN npm install
 
-//Copia todos los archivos del directorio al directorio de trabajo actual en el contenedor
+//Copio todos los archivos del directorio al directorio de trabajo actual en el contenedor
 COPY . .
 
 //Expongo el puerto 3000 (allí se ejecuta el frontend)
