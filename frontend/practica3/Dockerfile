@@ -8,7 +8,7 @@ WORKDIR /app
 //y los copio al directorio actual
 COPY package*.json ./
 
-//Instalo las dependencias del package.json con npm install
+//Instalo las dependencias definidas en el package.json con npm install
 RUN npm install
 
 //Copia todos los archivos del directorio al directorio de trabajo actual en el contenedor
